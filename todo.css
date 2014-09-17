@@ -1,0 +1,11 @@
+ p#mostimportant {
+         color: red;
+      }
+      
+ p#important {
+         color: yellow;
+      }
+    
+ p#leastimportant {
+         color: green;
+      }

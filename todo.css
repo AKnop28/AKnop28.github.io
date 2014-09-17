@@ -1,11 +1,15 @@
- #mostimportant {
+body {
+ background-color: #FF0000;
+}
+
+#mostimportant {
          color:  #FF0000;
       }
       
- #important {
+#important {
          color: #FFFFE0;
       }
     
- #leastimportant {
+#leastimportant {
          color: #E6F8F3;
       }

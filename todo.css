@@ -1,4 +1,4 @@
-#mostimportant {
+.mostimportant {
          color: red;
       }
       
@@ -9,3 +9,4 @@
 #leastimportant {
          color: blue;
       }
+

@@ -1,11 +1,11 @@
- p#mostimportant {
+ #mostimportant {
          color: red;
       }
       
- p#important {
+ #important {
          color: yellow;
       }
     
- p#leastimportant {
+ #leastimportant {
          color: green;
       }

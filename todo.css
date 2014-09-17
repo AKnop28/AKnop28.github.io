@@ -1,11 +1,11 @@
 #mostimportant {
-         color:  #FF0000;
+         color: red;
       }
       
 #important {
-         color: #FFFFE0;
+         color: yellow;
       }
     
 #leastimportant {
-         color: #E6F8F3;
+         color: blue;
       }

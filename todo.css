@@ -1,15 +1,11 @@
- #mostimportant {
-         color: red;
+ p#mostimportant {
+         color:  #FF0000;
       }
       
- #important {
-         color: yellow;
+ p#important {
+         color: #FFFFE0;
       }
     
- #leastimportant {
-         color: green;
+ p#leastimportant {
+         color: #E6F8F3;
       }
-
-p {
- color: purple;
-}

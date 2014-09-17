@@ -1,12 +1,12 @@
 #mostimportant {
-         background-color: red;
+         background-color: lightred;
       }
       
 #important {
-         background-color: yellow;
+         background-color: lightyellow;
       }
     
 #leastimportant {
-         background-color: blue;
+         background-color: lightblue;
       }
 

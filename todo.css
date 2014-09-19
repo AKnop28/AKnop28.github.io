@@ -10,3 +10,14 @@
          background-color: lightblue;
       }
 
+#Links {
+         display: inline;
+}
+
+a { 
+         background-color: lightblue;
+}
+
+a:hover { 
+    background-color: darkblue;
+}

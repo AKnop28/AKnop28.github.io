@@ -1,0 +1,60 @@
+
+         header {
+             position: fixed;
+             background-color: darkseagreen;
+             top: 0px;
+             left: 0px;
+             width: 100%;
+             height: 20px;
+         }
+         nav {
+             margin-top: 20px;
+             margin-bottom: 0px;
+             background-color: indianred;
+         }
+         nav li {
+            display: inline;
+         }
+         section {
+             float: left;
+             width: 20%;
+             height: 500px;
+             background-color: indianred;
+             color: white;
+             text-decoration: none;
+         }
+         aside {
+             float: left;
+             width: 80%;
+             height: 500px;
+             background-color: darkseagreen;
+         }
+             
+         footer {
+             clear: both;
+             background-color: darkseagreen;
+         }
+         body {
+             background-color: indianred;
+             margin: 0px;
+             color: black;
+         }
+         aside img {
+             float: left;
+         }
+        aside p { 
+              float: left;
+              position: relative;
+              left: 10px;
+              height: 400px;
+              width: 200px;
+     
+         }
+         h3#link {
+              display: inline;
+              margin: 100px;
+         }
+         ul { 
+              padding-left: 400px;
+         }
+       

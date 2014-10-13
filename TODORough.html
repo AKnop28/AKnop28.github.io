@@ -1,0 +1,90 @@
+<html>
+    <head>
+    <style>
+       body { 
+           background-color: darkseagreen;
+       }
+        header {
+            background-color: indianred;
+            font-size: 150%;
+            color: darkseagreen;
+            float: right;
+        }
+
+        
+        li.done {
+            text-decoration: line-through;
+        }
+    </style>
+    </head>
+    <body>
+        <header>Todo List</header>
+        <ul id="busylist">
+        </ul>
+    <aside>
+        <label for ="taskbox">Enter Task</label>
+        <input type="text" id="taskbox" size=40 value="Enter Text">
+        
+        <select id="priority">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+        </select>
+        <button onclick="addtask()">Enter</button>
+    </aside>
+    <script type="text/javascript">
+        
+        addtask = function() {
+            i = document.querySelector("#taskbox");
+            bl = document.querySelector("#busylist");
+            li = document.createElement("li");
+            li.innerHTML = "<input type=checkbox>" + i.value;
+            bl.appendChild(li);
+            i.value = "";
+        }
+         
+        doneTask = function() {
+            if (this.checked) {
+                this.parentNode.className.add("done")
+             } else {
+                this.parentNode.classList.remove("done")
+            }
+            
+            localSave()
+        }
+       
+        addTask = function() {
+            var newli;
+            task = document.querySelector("#taskbox");
+            tasklist = document.querySelector("#busylist");
+            priorityValue = document.querySelector("#priority").value;
+            newli = document.createElement('li');
+            newli.className = priorityValue;
+            newcb = document.createElement('input');
+            newcb.type = 'checkbox';
+            newli.appendChild(newcb);
+            t = document.createTextNode(task.value);
+            newli.appendChild(t);
+            taskList.appendChild(newli);
+            task.value = "";
+            newcb.onclick = doneTask; 
+        }
+      
+                                                  
+  localSave = function() {
+            res = []
+            var i;
+            allEntries = document.querySelectorAll('li')
+            for(i=0; i < allEntries.length; 1++) {
+                if (allEntries[i].classname != "done") {
+                    res.push(allEntries[i].innerText);
+                }
+            }
+            localStorage.setItems("todoDatabase",JSON.stringify(res))
+        }
+
+       
+  </script>  
+ </body>
+</html>
+        

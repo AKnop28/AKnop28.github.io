@@ -1,0 +1,18 @@
+    body { 
+           background-color: darkseagreen;
+    }
+    header {
+            background-color: indianred;
+            font-size: 150%;
+            color: darkseagreen;
+            text-align: center;
+    }
+        
+    ul {
+        list-style-type: none;
+        background: indianred;
+        border: 1px solid;
+    }
+    li.done {
+            text-decoration: line-through;
+    }
